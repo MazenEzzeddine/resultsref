@@ -282,10 +282,10 @@ def graf():
     coordsD = "data"
     con = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
                           axesA=ax[1,0], axesB=ax[0,0],
-                          shrinkB=1, color="green")
+                          shrinkB=1, color="green", linestyle="dotted")
     con2 = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
                           axesA=ax[2, 0], axesB=ax[1, 0],
-                          shrinkB=1, color="green")
+                          shrinkB=1, color="green", linestyle="dotted")
 
     #ax[0,0].add_artist(con)
     ax[1,0].add_artist(con)
@@ -298,10 +298,10 @@ def graf():
     coordsD = "data"
     conp = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
                           axesA=ax[0,1], axesB=ax[1,1],
-                          shrinkB=1, color="green")
+                          shrinkB=1, color="green", linestyle="dotted")
     con2p = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
                           axesA=ax[1, 1], axesB=ax[2, 1],
-                          shrinkB=1, color="green")
+                          shrinkB=1, color="green", linestyle="dotted")
 
     #ax[0,0].add_artist(con)
     ax[1,0].add_artist(con)
