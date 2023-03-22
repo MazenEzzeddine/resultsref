@@ -293,7 +293,7 @@ def graf():
 
 
     ####################################
-    pointC = (122, 178)
+    pointC = (124, 178)
     coordsC = "data"
     coordsD = "data"
     conp = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
@@ -308,7 +308,35 @@ def graf():
     ax[2,0].add_artist(con2)
     ax[1, 1].add_artist(conp)
     ax[2, 1].add_artist(con2p)
+#######################################################
 
+
+    pointC = (475, 350)
+    coordsC = "data"
+    coordsD = "data"
+    con = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
+                          axesA=ax[1, 0], axesB=ax[0, 0],
+                          shrinkB=1, color="green", linestyle="dotted")
+    con2 = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
+                           axesA=ax[2, 0], axesB=ax[1, 0],
+                           shrinkB=1, color="green", linestyle="dotted")
+
+    # ax[0,0].add_artist(con)
+    ax[1, 0].add_artist(con)
+    ax[2, 0].add_artist(con2)
+
+    pointC = (470, 350)
+    coordsC = "data"
+    coordsD = "data"
+    conp = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
+                           axesA=ax[0, 1], axesB=ax[1, 1],
+                           shrinkB=1, color="green", linestyle="dotted")
+    con2p = ConnectionPatch(xyA=pointC, xyB=pointC, coordsA=coordsC, coordsB=coordsD,
+                            axesA=ax[1, 1], axesB=ax[2, 1],
+                            shrinkB=1, color="green", linestyle="dotted")
+
+    ax[1, 1].add_artist(conp)
+    ax[2, 1].add_artist(con2p)
 
 
 
@@ -317,7 +345,7 @@ def graf():
     plt.show()
 
 
-###475, 350
+
     ########################################################################################################################
 
 
