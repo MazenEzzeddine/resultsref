@@ -266,7 +266,7 @@ def graf():
     # ax2.set_ylabel('MerchantBank µs', fontdict=font)
     # ax3.set_ylabel('ClientBank µs', fontdict=font)
    # ax[3,1].set_ylabel('End-to-end  \n latency (ms)', fontdict=font)
-    ax[3, 1].set_xlabel('time (s)', fontdict=font)
+    ax[3, 1].set_xlabel('Time (sec)', fontdict=font)
 
 
 

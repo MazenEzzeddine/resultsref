@@ -159,6 +159,7 @@ def graf():
     ax[2,0].set_ylabel('End to end latency (ms)', fontdict=font)
 
     ax[2,0].set_xlabel('Time (sec)', fontdict=font)
+    ax[2, 1].set_xlabel('Time (sec)', fontdict=font)
 
 
     ####################################################
